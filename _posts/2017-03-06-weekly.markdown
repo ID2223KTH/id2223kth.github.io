@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "March 6th - March 10th 2017"
+date:   2017-03-10 15:36:27
+categories: notebook weekly
+---
+
+# Accomplished Tasks
+
+- Ordered switches for edge cloud network
+- Setup power management for edge cloud nodes
+- Synthesis Proposal
+- Ran More Spark Experiments
+- Toured around a new faculty candidate
+- AI Exam
+
+# Weekly Summary
+
+### New Switches
+
+We finally ordered new switches for our edge cloud network. This will allow us to build the proposed topology from a few week ago. We settled on [Netgear M4300](https://www.cdwg.com/shop/products/NETGEAR-M4300-12X12F-Managed-Switch-24x10G-12x10GBASE-T-12xSFP-XSM4324S/3993463.aspx?pfm=srh) hybrid switches which feature both 10G copper 
+and 10G SFP+ with fallback to 1G for the copper side. These will hopefully allow us to use the same switch across the network whether we are using 10G or 1G networking. We will hopefully receive these in the next two weeks so 
+we can get to work on evaluating the redundancy of MPTCP.
+
+
+### Synthesis Proposal
+
+At UMass instead of qualifying exams we are expected to complete a synthesis proposal that takes two areas of CS and combines in a project. Throughout this project you get to work with two faculty and do some "multi-disciplinary" work. The deadline for proposing a project was on Wednesday which means I spent the majority of the beginning
+of this week working on the proposal. It was pretty straightforward and will hopefully be accepted. My proposal is combining Networking and Operating Systems through my MPTCP migration work. 
+
+### Spark Experiments
+
+I also spent part of this week tuning the shuffle parameters for Spark workloads. It was unfortunately all for nothing as I could not improve the performance no matter what I tuned. A closer look is needed, hopefully I can spend some time next week on this.
+
+### Faculty Candidate
+
+CICS had a prospective faculty candidate this week and I was tasked with making sure they got to their meetings on time. It was more difficult than I expected as each meeting seemed to start late and go way over the allotted time. It was enlightening experience as it demonstrated the hiring process at UMASS. I must say, it is a little overwhelming!
+It was also a cool experience because I got to tour the human testing facility on campus. It was way cool! They have a full functioning apartment that they can use to monitor individuals as they go about their day. They also have two metabolic chambers which were quite impressive.
+
+### AI Exam
+
+Thursday was the AI exam. It was not as bad as expected but as always I could have studied more! Here's to hoping things went well!
+
+### Azure Experiments
+
+I got it in my head that I would like to try to examine MPTCP's ndiffports functionality since this is something we have largely ignored to now. I decided to test it out in the public cloud with Microsoft Azure's Cloud Service. I tried to take the easy way out and install MPTCP on the VM's with the ubuntu package manager but that did not seem to work. When I went to run MPTCP, none of the congestion control managers were installed! I ditched the package manager version and installed the kernel from scratch which took a significant amount of time. I ran out of time to run the actual experiments but to have them completed by early next week.
+
+# What's up for next week?
+
+- Investigate spark further
+- Finish the Azure Experiments
+- Start some initial writing to get an idea of what we want to say/show. 

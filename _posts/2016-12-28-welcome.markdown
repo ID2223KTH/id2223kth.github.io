@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Blog in progress"
+date:   2016-12-28 15:36:27
+categories: blog
+---
+
+# Work in progress.
+
+Like a fine wine, a good blog takes time to age. I am currently (12-29-16) writing my first post and will upload it shortly. 
+In the future I hope to upload a new post every two weeks. 
+

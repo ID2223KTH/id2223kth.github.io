@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "March 13th - March 17th 2017"
+date:   2017-03-13 15:36:27
+permalink: /notebook/weekly/031317
+categories: notebook weekly 
+---
+
+# Accomplished Tasks
+
+- Performed Additional LAN VM Experiments
+- Performed ndiffports MPTCP experiments on Azure
+- Investigated Gitlab setup
+- MPTCP Buffer Formula Script
+
+# Weekly Summary
+
+### NSF GRFP 
+
+I was once again denied the NSF GRFP. While I am not upset about the outcome, I was a little disappointed reading the reviews. One in particular was rather harsh and seemed to be more attacking my skills as a graduate student rather than my application as a whole. That's all I am going to reference on the issue. Onwards and upwards!
+
+### LAN VM Experiments
+
+I ran some brief experiments on our LAN cluster evaluating the performance of migrations in the LAN environment. The results were as expected where we were able to get roughly double the performance of tcp migrations. These were more for validation than anything else. It was good to see MPTCP succeed in one case.
+
+### NDiffPorts Algorithm
+
+I spent most of this week performing experiments on Microsoft Azure's public cloud. I set up three virtual machine's with two located in the same datacenter and a third on the west coast. I configured each machine to use mptcp and run with the ndiffports algorithm. Briefly, the ndiffports alogoirthm is designed for use with machines that only have one interface but may be located in a data center where multiple paths are available between switches due to ECMP. The algorithm creates several TCP sockets using different ports so that ECMP hashes them onto different ports. Unfortunately, for us we do not know for sure whether ECMP and multiple paths exist in Azure datacenters, so going into this experiment I was not hopeful. The results for this experiment were not encouraging. We were unable to get MPTCP's performance to outperform TCP in either environment, despite tuning buffers and modifying the number of subflows. In every experiment, MPTCP lagged way behind TCP. This is likely due to multiple paths not existing between the machines as assumed. I was still rather shocked to see MPTCP do worse than baseline TCP. We are investigating further to see what we can find. 
+
+One thing that did result from these experiments was a discussion about which congestion control mechanism to use for MPTCP and TCP. We traditionally use Reno for TCP and Lia for MPTCP due to their similarties. We have to think about whether this is unfair, since I have seen cubic outperform Reno on several occassions. Does this mean we have unfairly hampered TCP? Decoupling MPTCP also seemed to have some performance benefits but what does that mean for other TCP connecitons on the machine. These are questions I hope to investigate going forward.
+
+
+### Git Lab
+
+Our lab recently deployed a gitlab server for our projects. It fell to me to evaluate the system and investigate how it works and what permissions to use. I spent about an hour and a half going through it and put together a brief one pager on some of the things we should consider as we use it in our lab. 
+
+### MPTCP Buffer Script
+
+I created a brief script to calculate the bandwidth delay product for MPTCP since it takes in a few different factors and units. Now I should be able to just enter the conditions and get the buffer size I need to configure the machine with. It is located in my SystemScripts repo under mptcp.
+
+ 
+
+
+# What's up for next week?
+
+- Plan out how to trace some of the networking behavior we are seeing.
+- Read through the in-depth networking blog posts.
+- Hopefully deploy our new topology. 
+- Return to Spark and tune terasort parameters. 
+- AI Homework 3

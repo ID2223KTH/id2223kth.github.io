@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "March 20th - March 24th 2017"
+date:   2017-03-24 15:36:27
+permalink: /notebook/weekly/032017
+categories: notebook weekly
+---
+
+# Accomplished Tasks
+
+- Picked up new switches
+- Configure one switch
+- Replaced dead switch
+- Compile list of probing tools
+- AI Homework 
+- Experiment Design
+- Workload Scripting
+- Started script building for experiments
+- Registered for NSDI '17
+- Debugged spark a little bit
+
+# Weekly Summary
+
+### Spark
+
+On Monday, I returned back to spark to see if we could find any new insights. When we looked a little closer at the terasort results, we saw that a lot of the time was being held up by the save to disk portion of the workload. We tuned the workload so that instead we just count the results. This allowed us to see clearly for the computation stage what the two protocols were doing. We thought we then received encouraging results but instead it looks like things turn quite variable. We will run more runs later to see if we can tease out the properties of each protocol for the workload.
+
+
+### New Switches
+
+The new switches finally arrived on Tuesday. I picked them up from cscf and brought them over to our server room. Because they are half rack switches we don't quite have the right mounting equipment. As such we can't setup the switches just yet. I did set up one switch just to play around with. They are quite easy to manage with a nice webui although unfortunately we can't modulate the network speeds as much as we thought. We have only two basic options which are auto and 100mbit/s. We were hoping for somethign in between 100mbit and 1G. We will have to find another way to modulate the traffic.
+
+Speaking of switches, the day after we hooked up the new switch, our management switch for our mini-edge cluster died on us. It was a very old switch and I saw this coming from a mile down the road since after the last power outage it wouldn't come back on until we manually intervened. Luckily we had a spare 1gig switch and I quickly replaced it to get some of the machine back online. We unfortunately had to leave some of them offline because the 1gig switch only has 8 ports. I plan to bring in another 8port switch next week. 
+
+### List of Network Tools
+
+As part of our experimentation process we need to find a way to understand exactly what is going on under the hood when we run MPTCP and TCP. This week I started compiling a list of available tools and the stats they provide so when we want to see a specific behavior we can easily find the right tool to acquire the data. This list is not complete nor is it long, but it is a start. I hope to post it in the resources section when I get a free moment. I will update back here when I get a chance to post it.
+
+### Experiment Design
+
+Since we have a bunch of experiments to run with a bunch of different conditions, I dedicated a bunch of time this week to planning out all the experiments and conditions using my experimental documentation format. This format basically outlines what our hypothesis is, what the experiment does, what should our graphs show and what monitoring should be done. We also list the configuration of all machines and networking options. It also contains the procedure for replication as well as the eventual results and a brief analysis. The goal is to provide a comprehensive overview of each experiment so we know exactly what was done to achieve each result. I spent a large part of this week preparing these sheets for the different experiments we are planning on running. 
+
+### Experiment Scripting
+
+On Friday I started scripting our first experiment. The script will gather all the configuration details for each machinem, will start the monitors, run the experiment and then clean up afterwards. This will hopefully remove alot of the manual details so we can easily run the experiment multiple times. 
+
+
+### NSDI '17
+
+This years NSDI is in Boston, which happens to be just down the road. As an impromptu decision a bunch of us decided to go last minute. Next Monday, Tuesday, and Wednesday I will be in Boston attending the conference. Hopefully I will get to talk to some people with more MPTCP experience to get their feelings on the protocol.
+
+# What's up for next week?
+
+- NSDI '17
+- MPTCP Profiling
+- Start disk experiments
