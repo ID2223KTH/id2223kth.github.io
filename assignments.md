@@ -19,7 +19,7 @@ The lab assignments span over different topics of the course. For each lab, a zi
 
 * **Lab 1:** this lab is an introduction to large-scale Machine Learning with Spark and Scala. In this lab, you will go through an end-to-end project by (i) discovering the given data, (ii) preparing the data for Machine Learning algorithms, (iii) selecting a model and train it, (iv) fine-tuning your model, and (v) presenting your solution.
   - Download [lab1]
-* **Lab 2:** the second lab assignment is about image Classification on FashionMNist with TensorFlow. It is designed to be more challenging than the MNist tutorial found on the TensorFlow website. It is more of an introduction to building ConvNets.
+* **Lab 2:** the second lab assignment is about image Classification, and it is more of an introduction to building ConvNets.
   - Download [lab2]
 <br>
 <hr>
