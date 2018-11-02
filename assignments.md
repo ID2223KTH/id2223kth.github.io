@@ -17,7 +17,7 @@ This course consists of two lab assignments, eight review questions, and one fin
 # **Lab Assignments**
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
-* **Programming environment:** we will use the Jupyter Notebook development environment in the lab assignments. Here, you can find the required information to setup the environment [[pdf](/slides/labs_env.pdf)]
+* **Programming environment:** we will use the Jupyter Notebook in the lab assignments. Here, you can find the required information to setup the programming environment [[pdf](/slides/labs_env.pdf)]
 * **Lab 1:** this lab is an introduction to large-scale Machine Learning with Spark and Scala. In this lab, you will go through an end-to-end project by (i) discovering the given data, (ii) preparing the data for Machine Learning algorithms, (iii) selecting a model and train it, (iv) fine-tuning your model, and (v) presenting your solution.
   - Download [lab1]
 * **Lab 2:** the second lab assignment is about image Classification, and it is more of an introduction to building ConvNets.
