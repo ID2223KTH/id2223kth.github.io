@@ -22,7 +22,7 @@ The lab assignments span over different topics of the course. For each lab, a zi
   - Download [[lab1](/slides/lab1.zip)]
   - Deadline: 2018-12-02, 23:59
 * **Lab 2:** the second lab assignment is about image Classification, and it is more of an introduction to building ConvNets.
-  - Download [lab2]
+  - Download [[lab2](/slides/lab2.zip)]
   - Deadline: 2018-12-23, 23:59
 <br>
 <hr>
