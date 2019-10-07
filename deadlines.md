@@ -5,7 +5,6 @@ permalink: /deadlines/
 ---
 
 # Review Questions
-* **TBA**
 * **RQ1** - deadline: Nov. 11
 * **RQ2** - deadline: Nov. 18
 * **RQ3** - deadline: Nov. 25
@@ -15,14 +14,14 @@ permalink: /deadlines/
 
 <br>
 
-# Reading Assignments
-* Deadline: Dec. 16
-
-<br>
-
 # Lab Assignments
 * **Lab1** - deadline: Nov. 25
 * **Lab2** - deadline: Dec. 16
+
+<br>
+
+# Reading Assignments
+* Deadline: Dec. 16
 
 <br>
 
