@@ -6,3 +6,9 @@
   href: "/assignments/"
 - title: "Material"
   href: "/material/"
+- title: "Deadlines"
+  href: "/deadlines/"
+- title: "Old"
+  subcategories:
+    - subtitle: "2018"
+      subhref: "/schedule_2018/"
