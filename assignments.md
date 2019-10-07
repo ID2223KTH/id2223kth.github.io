@@ -3,12 +3,11 @@ layout: page
 title: Assignments
 permalink: /assignments/
 ---
-This course consists of eight review questions, one reading assignments, two lab assignments, and one final project. All the assignments should be done in groups of two and have to be submitted before their deadlines. The review questions and the reading assignment are Pass/Fail assignments, 
+This course consists of six review questions, one reading assignment, two lab assignments, one final project, and the final exam. All the assignments should be done in groups of two and have to be submitted before their deadlines. The review questions and the reading assignment are Pass/Fail assignments, 
 and the labs and the project are graded from A to F. To pass the course, you should pass all the review and the reading assignments, and get at least E in all the other assignments and the final exam.
 
 ### The Final Grade
-The final grade is the average of the two labs, the project, and the final exam. To compute the final grade, you can map A-F to 5-1, and take the average. The floating values are rounded up if they are more than
-half, otherwise they are rounded down. For example, 3.6 will be rounded to 4, and 4.2 will be rounded to 4.
+The final grade is the average of the two labs, the project, and the final exam. To compute the final grade, you can map A-F to 5-1, and take the average. The floating values are rounded up if they are more than half, otherwise they are rounded down. For example, 3.6 will be rounded to 4, and 4.2 will be rounded to 4.
 
 <br>
 <hr>
@@ -21,6 +20,7 @@ The lab assignments span over different topics of the course. For each lab, a zi
 <br>
 <hr>
 <br>
+
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
 * **TBA**
