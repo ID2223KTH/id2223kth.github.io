@@ -12,17 +12,17 @@ The final grade is the average of the two labs, the project, and the final exam.
 <br>
 <hr>
 <br>
-# Lab Assignments
-The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
-
-* **Programming environment:** we will use the Jupyter Notebook in the lab assignments. Here, you can find the required information to setup the programming environment [[pdf](/slides/labs_env.pdf)]
+# Review Questions
+For each review question, you are asked to answer a few questions about each lecture.
 * **TBA**
 <br>
 <hr>
 <br>
 
-# Review Questions
-For each review question, you are asked to answer a few questions about each lecture.
+# Lab Assignments
+The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
+
+* **Programming environment:** we will use the Jupyter Notebook in the lab assignments. Here, you can find the required information to setup the programming environment [[pdf](/slides/labs_env.pdf)]
 * **TBA**
 <br>
 <hr>
