@@ -29,8 +29,7 @@ For each review question, you are asked to answer a few questions about each lec
 <br>
 
 # Reading Assignments
-For each reading assignment, you are asked to choose a paper form the list of given papers, or propose a paper youself that should be approved by the instructures.
-The reviews should have the following sections:
+For the reading assignment, you are asked to choose a paper form the list of given papers (or propose a paper youself that should be approved by the instructures), and write a **two-page** review. The reviews should have the following sections:
 * **Motivation:** describe the motivation of the paper, and explain WHY the addressed problem is interesting and important to be solved.
 * **Contributions:** explain the main contributions of the paper, and present WHAT the solved problems are.
 * **Solution:** very briefly explain HOW the authors solve the mentioned problems.
