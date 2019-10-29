@@ -14,7 +14,7 @@ The final grade is the average of the two labs, the project, and the final exam.
 <br>
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
-* **TBA**
+* **Review questions 1:** regression and classification [[pdf](/assignments/reading_assignments.pdf)]
 <br>
 <hr>
 <br>
