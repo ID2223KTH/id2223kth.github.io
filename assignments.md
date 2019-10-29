@@ -23,7 +23,8 @@ For each review question, you are asked to answer a few questions about each lec
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
 * **Programming environment:** we will use the Jupyter Notebook in the lab assignments. Here, you can find the required information to setup the programming environment [[pdf](/slides/labs_env.pdf)]
-* **TBA**
+* **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but you feel free to use Python if you prefer. You can download the assignment from [[here](/assignments/lab1.zip)].
+* **Lab 2:** TBA
 <br>
 <hr>
 <br>
