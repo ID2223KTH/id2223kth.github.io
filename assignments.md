@@ -15,6 +15,7 @@ The final grade is the average of the two labs, the project, and the final exam.
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
 * **Review questions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
+* **Review questions 2:** decision tree and feed-forward networks [[pdf](/assignments/review_questions2.pdf)]
 <br>
 <hr>
 <br>
