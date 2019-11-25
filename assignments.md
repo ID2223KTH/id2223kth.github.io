@@ -27,7 +27,7 @@ The lab assignments span over different topics of the course. For each lab, a zi
 
 * **Programming environment:** we will use the Jupyter Notebook in the lab assignments. Here, you can find the required information to setup the programming environment [[pdf](/slides/labs_env.pdf)]
 * **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer. You can download the assignment from [[here](/assignments/lab1.zip)].
-* **Lab 2:** TBA
+* **Lab 2:** In this lab assignment you will use TensorFlow/Keras to do two tasks: (i) image classification with CNN, and (ii) image captioning with a combination of CNN and RNN [[here](/assignments/lab2.ipynb)].
 <br>
 <hr>
 <br>
