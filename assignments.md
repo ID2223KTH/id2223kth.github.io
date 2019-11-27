@@ -8,16 +8,16 @@ and the labs and the project are graded from A to F. To pass the course, you sho
 
 ### The Final Grade
 The final grade is the average of the two labs, the project, and the final exam. To compute the final grade, you can map A-F to 5-1, and take the average. The floating values are rounded up if they are more than half, otherwise they are rounded down. For example, 3.6 will be rounded to 4, and 4.2 will be rounded to 4.
-
 <br>
 <hr>
 <br>
+
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
 * **Review questions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
 * **Review questions 2:** decision tree and feed-forward networks [[pdf](/assignments/review_questions2.pdf)]
 * **Review questions 3:** training feed-forward networks and CNNs [[pdf](/assignments/review_questions3.pdf)]
-* **Review questions 3:** RNNs and autoencoders [[pdf](/assignments/review_questions4.pdf)]
+* **Review questions 4:** RNNs and autoencoders [[pdf](/assignments/review_questions4.pdf)]
 <br>
 <hr>
 <br>
@@ -38,10 +38,10 @@ For the reading assignment, you are asked to choose a paper form the list of giv
 * **Contributions:** explain the main contributions of the paper, and present WHAT the solved problems are.
 * **Solution:** very briefly explain HOW the authors solve the mentioned problems.
 * **Strong and weak points:** What are the strong and weak points of the paper?
-
 <br>
 <hr>
 <br>
+
 # Project
 You should define your own project by writing at most one page description of the project. The proposed project should be approved by the examiner. The project proposal should cover the following headings:
 * **Problem description:** what is the problem that you will be investigating?
