@@ -18,6 +18,7 @@ For each review question, you are asked to answer a few questions about each lec
 * **Review questions 2:** decision tree and feed-forward networks [[pdf](/assignments/review_questions2.pdf)]
 * **Review questions 3:** training feed-forward networks and CNNs [[pdf](/assignments/review_questions3.pdf)]
 * **Review questions 4:** RNNs and autoencoders [[pdf](/assignments/review_questions4.pdf)]
+* **Review questions 5:** GANs and RL [[pdf](/assignments/review_questions5.pdf)]
 <br>
 <hr>
 <br>
