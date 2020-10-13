@@ -3,22 +3,23 @@ layout: page
 title: Assignments
 permalink: /assignments/
 ---
-This course consists of six review questions, one reading assignment, two lab assignments, one final project, and the final exam. All the assignments should be done in groups of two and have to be submitted before their deadlines. The review questions and the reading assignment are Pass/Fail assignments, 
-and the labs and the project are graded from A to F. To pass the course, you should pass all the review and the reading assignments, and get at least E in all the other assignments and the final exam.
+This course consists of six review questions, two lab assignments, and one final project. All the assignments should be done in groups of two and have to be submitted before their deadlines. 
+All the assignments are graded. The review questions are graded A-F. The two lab assignments have A, C, and E grading. To deliver the labs, students should submit the source codes before the deadlines and 
+give an oral presentation about their implementations. They also need to answer questions that include basic and advanced questions. Suppose students implement the labs and answer all the questions. 
+In that case, they will get A. If they can only answer the basic questions, they will get C, and if they cannot answer the questions, they will get E. The final project has A-D grading. Students should 
+propose a topic to implement as the final project. Based on the complexity of the proposal, it will be an A-level proposal or a C-level proposal. This assignment also includes an oral presentation. 
+If students implement the proposed topic and answer the questions in the oral exam, they will get either A or C, based on the difficulty level of the topic. If they only do the implementation, but cannot 
+answer the questions, the grades would be B or D, respectively.
 
 ### The Final Grade
-The final grade is the average of the two labs, the project, and the final exam. To compute the final grade, you can map A-F to 5-1, and take the average. The floating values are rounded up if they are more than half, otherwise they are rounded down. For example, 3.6 will be rounded to 4, and 4.2 will be rounded to 4.
+The final grade is the average of the two labs, the project, and the review questions. To compute the final grade, you can map A-F to 5-1, and take the average. The floating values are rounded up if they are more than half, otherwise they are rounded down. For example, 3.6 will be rounded to 4, and 4.2 will be rounded to 4.
 <br>
 <hr>
 <br>
 
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
-* **Review questions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
-* **Review questions 2:** decision tree and feed-forward networks [[pdf](/assignments/review_questions2.pdf)]
-* **Review questions 3:** training feed-forward networks and CNNs [[pdf](/assignments/review_questions3.pdf)]
-* **Review questions 4:** RNNs and autoencoders [[pdf](/assignments/review_questions4.pdf)]
-* **Review questions 5:** GANs and RL [[pdf](/assignments/review_questions5.pdf)]
+* **TBA**
 <br>
 <hr>
 <br>
@@ -26,19 +27,7 @@ For each review question, you are asked to answer a few questions about each lec
 # Lab Assignments
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
-* **Programming environment:** we will use the Jupyter Notebook in the lab assignments. Here, you can find the required information to setup the programming environment [[pdf](/slides/labs_env.pdf)]
-* **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer. You can download the assignment from [[here](/assignments/lab1.zip)].
-* **Lab 2:** In this lab assignment you will use TensorFlow/Keras to do two tasks: (i) image classification with CNN, and (ii) image captioning with a combination of CNN and RNN [[here](/assignments/lab2.ipynb)].
-<br>
-<hr>
-<br>
-
-# Reading Assignments
-For the reading assignment, you are asked to choose a paper form the list of given papers (or propose a paper youself that should be approved by the instructures), and write a **two-page** review. The reviews should have the following sections:
-* **Motivation:** describe the motivation of the paper, and explain WHY the addressed problem is interesting and important to be solved.
-* **Contributions:** explain the main contributions of the paper, and present WHAT the solved problems are.
-* **Solution:** very briefly explain HOW the authors solve the mentioned problems.
-* **Strong and weak points:** What are the strong and weak points of the paper?
+* **TBA**
 <br>
 <hr>
 <br>
