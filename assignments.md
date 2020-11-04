@@ -27,7 +27,8 @@ For each review question, you are asked to answer a few questions about each lec
 # Lab Assignments
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
-* **TBA**
+* **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer. 
+You can download the assignment from [[here](/assignments/lab1.zip)].
 <br>
 <hr>
 <br>
