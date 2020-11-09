@@ -20,6 +20,7 @@ The final grade is the average of the two labs, the project, and the review ques
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
 * **RQ1**: linear regression and classification [[pdf](/assignments/rq1.pdf)]
+* **RQ2:** decision tree and feed-forward networks [[pdf](/assignments/rq2.pdf)]
 <br>
 <hr>
 <br>
