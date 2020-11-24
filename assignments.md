@@ -22,6 +22,7 @@ For each review question, you are asked to answer a few questions about each lec
 * **RQ1**: linear regression and classification [[pdf](/assignments/rq1.pdf)]
 * **RQ2:** decision tree and feed-forward networks [[pdf](/assignments/rq2.pdf)]
 * **RQ3:** training feed-forward networks and CNNs [[pdf](/assignments/rq3.pdf)]
+* **RQ4:** RNNs, attentions, and transformers [[pdf](/assignments/rq4.pdf)]
 <br>
 <hr>
 <br>
