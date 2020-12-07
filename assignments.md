@@ -24,6 +24,7 @@ For each review question, you are asked to answer a few questions about each lec
 * **RQ3:** training feed-forward networks and CNNs [[pdf](/assignments/rq3.pdf)]
 * **RQ4:** RNNs, attentions, and transformers [[pdf](/assignments/rq4.pdf)]
 * **RQ5:** Autoencoders and GAN [[pdf](/assignments/rq5.pdf)]
+* **RQ6:** Distributed learning [[pdf](/assignments/rq6.pdf)]
 <br>
 <hr>
 <br>
