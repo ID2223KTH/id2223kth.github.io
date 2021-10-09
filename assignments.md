@@ -3,28 +3,14 @@ layout: page
 title: Assignments
 permalink: /assignments/
 ---
-This course consists of six review questions, two lab assignments, and one final project. All the assignments should be done in groups of two and have to be submitted before their deadlines. 
-All the assignments are graded. The review questions are graded A-F. The two lab assignments have A, C, and E grading. To deliver the labs, students should submit the source codes before the deadlines and 
-give an oral presentation about their implementations. They also need to answer questions that include basic and advanced questions. Suppose students implement the labs and answer all the questions. 
-In that case, they will get A. If they can only answer the basic questions, they will get C, and if they cannot answer the questions, they will get E. The final project has A-D grading. Students should 
-propose a topic to implement as the final project. Based on the complexity of the proposal, it will be an A-level proposal or a C-level proposal. This assignment also includes an oral presentation. 
-If students implement the proposed topic and answer the questions in the oral exam, they will get either A or C, based on the difficulty level of the topic. If they only do the implementation, but cannot 
-answer the questions, the grades would be B or D, respectively.
-
-### The Final Grade
-The final grade is the average of the two labs, the project, and the review questions. To compute the final grade, you can map A-F to 5-1, and take the average. The floating values are rounded up if they are more than half, otherwise they are rounded down. For example, 3.6 will be rounded to 4, and 4.2 will be rounded to 4.
-<br>
-<hr>
-<br>
+This course consists of five review questions, two lab assignments, and one final project. All the assignments should be done in groups of two and have to be submitted before their deadlines. 
+All the assignments are graded A-F, and students should submit them before the deadlines. A late submission will reduce the assignment’s grade level by one. That is, A will become B, B will become C, 
+and so on. To deliver the labs and the final project, in addition to the source code, students should give an oral presentation of their code and answer questions that include basic and advanced questions. 
+The details of the grading are presented in the slides of the introduction lecture.
 
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
-* **RQ1**: linear regression and classification [[pdf](/assignments/rq1.pdf)]
-* **RQ2:** decision tree and feed-forward networks [[pdf](/assignments/rq2.pdf)]
-* **RQ3:** training feed-forward networks and CNNs [[pdf](/assignments/rq3.pdf)]
-* **RQ4:** RNNs, attentions, and transformers [[pdf](/assignments/rq4.pdf)]
-* **RQ5:** Autoencoders and GAN [[pdf](/assignments/rq5.pdf)]
-* **RQ6:** Distributed learning [[pdf](/assignments/rq6.pdf)]
+* **RQ**: TBA
 <br>
 <hr>
 <br>
