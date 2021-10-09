@@ -5,17 +5,16 @@ permalink: /deadlines/
 ---
 
 # Review Questions
-* **RQ1** - deadline: Nov. 8
-* **RQ2** - deadline: Nov. 15
-* **RQ3** - deadline: Nov. 22
-* **RQ4** - deadline: Nov. 29
-* **RQ5** - deadline: Dec. 6
-* **RQ6** - deadline: Dec. 13
+* **RQ1** - deadline: Nov. 13
+* **RQ2** - deadline: Nov. 20
+* **RQ3** - deadline: Nov. 27
+* **RQ4** - deadline: Dec. 4
+* **RQ5** - deadline: Dec. 11
 <br>
 
 # Lab Assignments
-* **Lab1** - deadline: Nov. 22
-* **Lab2** - deadline: Dec. 13
+* **Lab1** - deadline: Nov. 20
+* **Lab2** - deadline: Dec. 17
 <br>
 
 # The Final Project

@@ -18,10 +18,7 @@ For each review question, you are asked to answer a few questions about each lec
 # Lab Assignments
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
-* **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer.
-You can download the assignment from [[here](/assignments/lab1.zip)].
-* **Lab 2:** In this lab assignment, we would like you to implement a code to automatically describe the content of an image by using CNNs and RNNs to build an Image Caption Generator. Specifically, 
-you will be implementing and training the model in the following paper with TensorFlow/Keras/PyTorch on one of the datasets mentioned in the [[paper](https://arxiv.org/abs/1411.4555)].
+* **Lab:** TBA
 <br>
 <hr>
 <br>
