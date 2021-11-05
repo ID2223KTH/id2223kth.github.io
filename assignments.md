@@ -10,7 +10,7 @@ The details of the grading are presented in the slides of the introduction lectu
 
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
-* **RQ**: TBA
+* **Review qestions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
 <br>
 <hr>
 <br>
@@ -18,7 +18,8 @@ For each review question, you are asked to answer a few questions about each lec
 # Lab Assignments
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
-* **Lab:** TBA
+* **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer. 
+You can download the assignment from [[here](/assignments/lab1.zip)].
 <br>
 <hr>
 <br>
