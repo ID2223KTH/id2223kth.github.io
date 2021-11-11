@@ -11,6 +11,7 @@ The details of the grading are presented in the slides of the introduction lectu
 # Review Questions
 For each review question, you are asked to answer a few questions about each lecture.
 * **Review qestions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
+* **Review qestions 2:** decision tree and deep neural network [[pdf](/assignments/review_questions2.pdf)]
 <br>
 <hr>
 <br>
