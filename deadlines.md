@@ -19,4 +19,4 @@ permalink: /deadlines/
 
 # The Final Project
 * **Proposal** - deadline: Dec. 1
-* **Project** - deadline: Dec. 20
+* **Project** - deadline: Jan. 8

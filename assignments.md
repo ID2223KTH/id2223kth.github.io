@@ -12,6 +12,7 @@ The details of the grading are presented in the slides of the introduction lectu
 For each review question, you are asked to answer a few questions about each lecture.
 * **Review qestions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
 * **Review qestions 2:** decision tree and deep neural network [[pdf](/assignments/review_questions2.pdf)]
+* **Review qestions 3:** training deep neural network and CNNs [[pdf](/assignments/review_questions3.pdf)]
 <br>
 <hr>
 <br>
@@ -20,7 +21,9 @@ For each review question, you are asked to answer a few questions about each lec
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
 * **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer. 
-You can download the assignment from [[here](/assignments/lab1.zip)].
+You can download the assignment from [here](/assignments/lab1.zip).
+* **Lab 2:** The goal of this assignment is to train a network to produce sentence embedding, by implementing the proposed method of the [S-BERT paper](https://arxiv.org/abs/1908.10084).
+You can download the desciption of the assignment from [here](/assignments/lab2.pdf).
 <br>
 <hr>
 <br>
