@@ -23,7 +23,7 @@ The lab assignments span over different topics of the course. For each lab, a zi
 * **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer. 
 You can download the assignment from [here](/assignments/lab1.zip).
 * **Lab 2:** The goal of this assignment is to train a network to produce sentence embedding, by implementing the proposed method of the [S-BERT paper](https://arxiv.org/abs/1908.10084).
-You can download the desciption of the assignment from [here](/assignments/lab2.pdf).
+You can download the description of the assignment from [here](/assignments/lab2.pdf).
 <br>
 <hr>
 <br>
