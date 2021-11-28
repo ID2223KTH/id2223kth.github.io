@@ -13,6 +13,7 @@ For each review question, you are asked to answer a few questions about each lec
 * **Review qestions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
 * **Review qestions 2:** decision tree and deep neural network [[pdf](/assignments/review_questions2.pdf)]
 * **Review qestions 3:** training deep neural network and CNNs [[pdf](/assignments/review_questions3.pdf)]
+* **Review qestions 4:** RNNs and transformer [[pdf](/assignments/review_questions4.pdf)]
 <br>
 <hr>
 <br>
