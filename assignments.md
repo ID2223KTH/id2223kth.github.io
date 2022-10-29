@@ -1,31 +1,23 @@
 ---
 layout: page
-title: Assignments
+title: Exam and Assignments
 permalink: /assignments/
 ---
-This course consists of five review questions, two lab assignments, and one final project. All the assignments should be done in groups of two and have to be submitted before their deadlines. 
-All the assignments are graded A-F, and students should submit them before the deadlines. A late submission will reduce the assignment’s grade level by one. That is, A will become B, B will become C, 
-and so on. To deliver the labs and the final project, in addition to the source code, students should give an oral presentation of their code and answer questions that include basic and advanced questions. 
-The details of the grading are presented in the slides of the introduction lecture.
+This course consists of a written examination, two lab assignments, and one final project. The labs and project should be done in groups of two and have to be submitted before their deadlines. 
+The examination and the labs are graded A-F, while the project is graded P/F, and students should submit them before the deadlines. A late submission will reduce the assignment’s grade level by one. That is, A will become B, B will become C, and so on. When delivering the labs and the final project, in addition to the source code, students should give an oral presentation of their code and answer questions that include basic and advanced questions. The details of the grading are presented in the slides of the introduction lecture.
 
-# Review Questions
-For each review question, you are asked to answer a few questions about each lecture.
-* **Review qestions 1:** regression and classification [[pdf](/assignments/review_questions1.pdf)]
-* **Review qestions 2:** decision tree and deep neural network [[pdf](/assignments/review_questions2.pdf)]
-* **Review qestions 3:** training deep neural network and CNNs [[pdf](/assignments/review_questions3.pdf)]
-* **Review qestions 4:** RNNs and transformer [[pdf](/assignments/review_questions4.pdf)]
-* **Review qestions 5:** distributed learning [[pdf](/assignments/review_questions5.pdf)]
-<br>
+# Exam
+The exam will be based on the material from the lectures and the referenced material in the coursebooks.
 <hr>
 <br>
 
 # Lab Assignments
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
-* **Lab 1:** In this lab assignment you will practice the basics of regression and classification in Spark. The given notebook is in Scala, but feel free to use Python if you prefer. 
-You can download the assignment from [here](/assignments/lab1.zip).
-* **Lab 2:** The goal of this assignment is to train a network to produce sentence embedding, by implementing the proposed method of the [S-BERT paper](https://arxiv.org/abs/1908.10084).
-You can download the description of the assignment from [here](/assignments/lab2.pdf).
+* **Lab 1:** 
+
+* **Lab 2:** 
+
 <br>
 <hr>
 <br>
@@ -38,4 +30,4 @@ You should define your own project by writing at most one page description of th
 * **Methodology and algorithm:** what method(s) or algorithm(s) are you proposing? 
 
 ### What to deliver
-You can implement your code using Jupyter Notebook or as a stand alone application. You should submit a zip file containing your code and a short report (two to three pages) about what you have done, the dataset, your method, your results, and how to run the code.
+You should deliver your project as a stand alone serverless ML system. You should submit a URL for your service, a zip file containing your code, and a short report (two to three pages) about what you have done, the dataset, your method, your results, and how to run the code. I encourage you to have the README.md for your project in your Github report as the report for your project.
