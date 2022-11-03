@@ -1,12 +1,18 @@
 import os
 import modal
 
-stub = modal.Stub()
+LOCAL=True
 
-hopsworks_image = modal.Image.debian_slim().apt_install(["libgomp1"]).pip_install(["hopsworks", "seaborn", "joblib", "scikit-learn"])
+if LOCAL == False:
+   stub = modal.Stub()
+   image = modal.Image.debian_slim().apt_install(["libgomp1"]).pip_install(["hopsworks", "seaborn", "joblib", "scikit-learn"])
 
-@stub.function(image=hopsworks_image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("jim-hopsworks-ai"))
-def f():
+   @stub.function(image=image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("jim-hopsworks-ai"))
+   def f():
+       g()
+
+
+def g():
     import hopsworks
     import pandas as pd
     from sklearn.neighbors import KNeighborsClassifier
@@ -87,5 +93,8 @@ def f():
     iris_model.save(model_dir)
     
 if __name__ == "__main__":
-    with stub.run():
-        f()
+    if LOCAL == True :
+        g()
+    else:
+        with stub.run():
+            f()

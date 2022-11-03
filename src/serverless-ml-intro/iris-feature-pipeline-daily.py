@@ -42,6 +42,7 @@ def get_random_iris_flower():
     setosa_df =  generate_flower("Setosa", 6, 4.5, 4.5, 2.3, 1.2, 2, 0.7, 0.3)
 
     # randomly pick one of these 3 and write it to the featurestore
+    #random.seed(1)
     pick_random = random.uniform(0,3)
     if pick_random >= 2:
         iris_df = virginica_df

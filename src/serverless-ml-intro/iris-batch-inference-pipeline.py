@@ -32,7 +32,6 @@ def g():
     model = joblib.load(model_dir + "/iris_model.pkl")
     
     feature_view = fs.get_feature_view(name="iris", version=1)
-    
     batch_data = feature_view.get_batch_data()
     
     y_pred = model.predict(batch_data)
