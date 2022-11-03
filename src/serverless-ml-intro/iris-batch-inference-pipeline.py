@@ -1,24 +1,14 @@
 import os
 import modal
     
-LOCAL=False
+LOCAL=True
 
 if LOCAL == False:
    stub = modal.Stub()
    hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks","joblib","seaborn","sklearn","dataframe-image"])
-   secret = modal.Secret.from_name("jim-hopsworks-ai")
-   period = modal.Period(days=1)
-   
-   @stub.function(image=hopsworks_image, schedule=period, secret=secret)
+   @stub.function(image=hopsworks_image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("jim-hopsworks-ai"))
    def f():
        g()
-else:
-   hopsworks_image=""
-   secret=""
-   period=""
-   class stub:
-    def function(**kwargs):
-        print("Not loading Modal")
 
 def g():
     import pandas as pd
@@ -31,6 +21,7 @@ def g():
     from sklearn.metrics import confusion_matrix
     from matplotlib import pyplot
     import seaborn as sns
+    import requests
 
     project = hopsworks.login()
     fs = project.get_feature_store()
@@ -47,21 +38,21 @@ def g():
     y_pred = model.predict(batch_data)
     
     flower = y_pred[y_pred.size-1]
-    flower_img = "assets/" + flower + ".png"
+    flower_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + flower + ".png"
     print("Flower predicted: " + flower)
-    img = Image.open(flower_img)            
-    img.save("./assets/latest_iris.png")
+    img = Image.open(requests.get(flower_url, stream=True).raw)            
+    img.save("./latest_iris.png")
     dataset_api = project.get_dataset_api()    
-    dataset_api.upload("./assets/latest_iris.png", "Resources/images", overwrite=True)
+    dataset_api.upload("./latest_iris.png", "Resources/images", overwrite=True)
     
     iris_fg = fs.get_feature_group(name="iris", version=1)
     df = iris_fg.read()
     label = df.iloc[-1]["variety"]
-    label_flower = "assets/" + label + ".png"
+    label_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + label + ".png"
     print("Flower actual: " + label)
-    img = Image.open(label_flower)            
-    img.save("./assets/actual_iris.png")
-    dataset_api.upload("./assets/actual_iris.png", "Resources/images", overwrite=True)
+    img = Image.open(requests.get(label_url, stream=True).raw)            
+    img.save("./actual_iris.png")
+    dataset_api.upload("./actual_iris.png", "Resources/images", overwrite=True)
     
     monitor_fg = fs.get_or_create_feature_group(name="iris_predictions",
                                                 version=1,
@@ -80,8 +71,8 @@ def g():
     
     history_df = monitor_fg.read()
     df_recent = history_df.tail(5)
-    dfi.export(df_recent, './assets/df_recent.png', table_conversion = 'matplotlib')
-    dataset_api.upload("./assets/df_recent.png", "Resources/images", overwrite=True)
+    dfi.export(df_recent, './df_recent.png', table_conversion = 'matplotlib')
+    dataset_api.upload("./df_recent.png", "Resources/images", overwrite=True)
     
     predictions = history_df[['prediction']]
     labels = history_df[['label']]
@@ -94,8 +85,8 @@ def g():
     
         cm = sns.heatmap(df_cm, annot=True)
         fig = cm.get_figure()
-        fig.savefig("./assets/confusion_matrix.png")
-        dataset_api.upload("./assets/confusion_matrix.png", "Resources/images", overwrite=True)
+        fig.savefig("./confusion_matrix.png")
+        dataset_api.upload("./confusion_matrix.png", "Resources/images", overwrite=True)
     else:
         print("You need to run the batch inference pipeline more times until you get 3 different iris flowers")  
 

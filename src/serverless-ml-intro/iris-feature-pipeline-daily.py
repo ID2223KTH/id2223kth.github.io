@@ -1,12 +1,17 @@
 import os
 import modal
     
-LOCAL=False
 BACKFILL=False
+LOCAL=True
 
-stub = modal.Stub()
+if LOCAL == False:
+   stub = modal.Stub()
+   image = modal.Image.debian_slim().pip_install(["hopsworks","joblib","seaborn","sklearn","dataframe-image"]) 
 
-hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks"])
+   @stub.function(image=image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("jim-hopsworks-ai"))
+   def f():
+       g()
+
 
 def generate_flower(name, sepal_len_max, sepal_len_min, sepal_width_max, sepal_width_min, 
                     petal_len_max, petal_len_min, petal_width_max, petal_width_min):
@@ -49,10 +54,6 @@ def get_random_iris_flower():
 
 
 
-@stub.function(image=hopsworks_image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("jim-hopsworks-ai"))
-def f():
-    g()
-
 def g():
     import hopsworks
     import pandas as pd
@@ -73,7 +74,7 @@ def g():
     iris_fg.insert(iris_df, write_options={"wait_for_job" : False})
 
 if __name__ == "__main__":
-    if LOCAL == True:
+    if LOCAL == True :
         g()
     else:
         with stub.run():
