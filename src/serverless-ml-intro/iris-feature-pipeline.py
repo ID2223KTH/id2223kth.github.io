@@ -3,9 +3,9 @@ import modal
     
 LOCAL=True
 
-stub = modal.Stub()
-
-hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks"])
+if LOCAL==False: 
+    stub = modal.Stub()
+    hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks"])
 
 
 @stub.function(image=hopsworks_image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("jim-hopsworks-ai"))
@@ -24,7 +24,7 @@ def g():
         version=1,
         primary_key=["sepal_length","sepal_width","petal_length","petal_width"], 
         description="Iris flower dataset")
-    iris_fg.insert(iris_df)
+    iris_fg.insert(iris_df, write_options={"wait_for_job" : False})
 
 if __name__ == "__main__":
     if LOCAL == True :

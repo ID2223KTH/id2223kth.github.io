@@ -9,3 +9,5 @@ assets/mathjax
 
 # Ignore mac files
 .DS_Store
+
+api-key.sh
