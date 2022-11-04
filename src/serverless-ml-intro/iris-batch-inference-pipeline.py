@@ -35,7 +35,7 @@ def g():
     batch_data = feature_view.get_batch_data()
     
     y_pred = model.predict(batch_data)
-    print(y_pred)
+    # print(y_pred)
     flower = y_pred[y_pred.size-1]
     flower_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + flower + ".png"
     print("Flower predicted: " + flower)
@@ -46,7 +46,7 @@ def g():
     
     iris_fg = fs.get_feature_group(name="iris_modal", version=1)
     df = iris_fg.read()
-    print(df["variety"])
+    # print(df["variety"])
     label = df.iloc[-1]["variety"]
     label_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + label + ".png"
     print("Flower actual: " + label)

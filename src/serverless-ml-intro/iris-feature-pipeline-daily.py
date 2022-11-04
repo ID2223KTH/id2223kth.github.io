@@ -2,7 +2,7 @@ import os
 import modal
     
 BACKFILL=False
-LOCAL=True
+LOCAL=False
 
 if LOCAL == False:
    stub = modal.Stub()
