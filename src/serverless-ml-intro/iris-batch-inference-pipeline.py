@@ -27,16 +27,16 @@ def g():
     fs = project.get_feature_store()
     
     mr = project.get_model_registry()
-    model = mr.get_model("iris", version=1)
+    model = mr.get_model("iris_modal", version=1)
     model_dir = model.download()
     model = joblib.load(model_dir + "/iris_model.pkl")
     
-    feature_view = fs.get_feature_view(name="iris", version=1)
+    feature_view = fs.get_feature_view(name="iris_modal", version=1)
     batch_data = feature_view.get_batch_data()
     
     y_pred = model.predict(batch_data)
-    
-    flower = y_pred[3]
+    print(y_pred)
+    flower = y_pred[y_pred.size-1]
     flower_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + flower + ".png"
     print("Flower predicted: " + flower)
     img = Image.open(requests.get(flower_url, stream=True).raw)            
@@ -44,8 +44,9 @@ def g():
     dataset_api = project.get_dataset_api()    
     dataset_api.upload("./latest_iris.png", "Resources/images", overwrite=True)
     
-    iris_fg = fs.get_feature_group(name="iris", version=1)
+    iris_fg = fs.get_feature_group(name="iris_modal", version=1)
     df = iris_fg.read()
+    print(df["variety"])
     label = df.iloc[-1]["variety"]
     label_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + label + ".png"
     print("Flower actual: " + label)
@@ -69,16 +70,23 @@ def g():
     monitor_fg.insert(monitor_df, write_options={"wait_for_job" : False})
     
     history_df = monitor_fg.read()
+    # Add our prediction to the history, as the history_df won't have it - 
+    # the insertion was done asynchronously, so it will take ~1 min to land on App
+    history_df = pd.concat([history_df, monitor_df])
+
+
     df_recent = history_df.tail(5)
     dfi.export(df_recent, './df_recent.png', table_conversion = 'matplotlib')
     dataset_api.upload("./df_recent.png", "Resources/images", overwrite=True)
     
     predictions = history_df[['prediction']]
     labels = history_df[['label']]
-    results = confusion_matrix(labels, predictions)
-    
+
     # Only create the confusion matrix when our iris_predictions feature group has examples of all 3 iris flowers
-    if results.shape == (3,3):
+    print("Number of different flower predictions to date: " + str(predictions.value_counts().count()))
+    if predictions.value_counts().count() == 3:
+        results = confusion_matrix(labels, predictions)
+    
         df_cm = pd.DataFrame(results, ['True Setosa', 'True Versicolor', 'True Virginica'],
                              ['Pred Setosa', 'Pred Versicolor', 'Pred Virginica'])
     
@@ -87,7 +95,8 @@ def g():
         fig.savefig("./confusion_matrix.png")
         dataset_api.upload("./confusion_matrix.png", "Resources/images", overwrite=True)
     else:
-        print("You need to run the batch inference pipeline more times until you get 3 different iris flowers")  
+        print("You need 3 different flower predictions to create the confusion matrix.")
+        print("Run the batch inference pipeline more times until you get 3 different iris flower predictions") 
 
 
 if __name__ == "__main__":
