@@ -43,13 +43,13 @@ def get_random_iris_flower():
 
     # randomly pick one of these 3 and write it to the featurestore
     #random.seed(1)
-    pick_random = random.uniform(0,3)
-    if pick_random >= 2:
-        iris_df = virginica_df
-    elif pick_random >= 1:
-        iris_df = versicolor_df
-    else:
-        iris_df = setosa_df
+    # pick_random = random.uniform(0,3)
+    # if pick_random >= 2:
+    iris_df = virginica_df
+    # elif pick_random >= 1:
+    #     iris_df = versicolor_df
+    # else:
+    #     iris_df = setosa_df
 
     return iris_df
 

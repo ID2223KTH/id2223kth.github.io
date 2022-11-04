@@ -53,43 +53,43 @@ def g():
     # Evaluate model performance using the features from the test set (X_test)
     y_pred = model.predict(X_test)
 
-
     # Compare predictions (y_pred) with the labels in the test set (y_test)
     metrics = classification_report(y_test, y_pred, output_dict=True)
     results = confusion_matrix(y_test, y_pred)
 
-    # Store the confusion matrix in a PNG image file
+    # Create the confusion matrix as a figure, we will later store it as a PNG image file
     df_cm = pd.DataFrame(results, ['True Setosa', 'True Versicolor', 'True Virginica'],
                          ['Pred Setosa', 'Pred Versicolor', 'Pred Virginica'])
     cm = sns.heatmap(df_cm, annot=True)
     fig = cm.get_figure()
 
-    # We will now upload our model to the Hopsworks Model Registry. First get a reference to it - 'mr'.
+    # We will now upload our model to the Hopsworks Model Registry. First get an object for the model registry.
     mr = project.get_model_registry()
     
-    # The contents of the 'iris_model' directory will be saved to the model registry
+    # The contents of the 'iris_model' directory will be saved to the model registry. Create the dir, first.
     model_dir="iris_model"
     if os.path.isdir(model_dir) == False:
         os.mkdir(model_dir)
 
-    # Save both our model and the confusion matrix to the model registry
+    # Save both our model and the confusion matrix to 'model_dir', whose contents will be uploaded to the model registry
     joblib.dump(model, model_dir + "/iris_model.pkl")
     fig.savefig(model_dir + "/confusion_matrix.png")    
 
 
-    # Specify the schema of the model input/output interfaces
+    # Specify the schema of the model's input/output using the features (X_train) and labels (y_train)
     input_schema = Schema(X_train)
     output_schema = Schema(y_train)
     model_schema = ModelSchema(input_schema, output_schema)
 
-    # Create a model for the model registry that includes its name, desc, metrics (performance)
+    # Create an entry in the model registry that includes the model's name, desc, metrics
     iris_model = mr.python.create_model(
         name="iris_modal", 
         metrics={"accuracy" : metrics['accuracy']},
         model_schema=model_schema,
-        description="Iris Flower Predictor")
+        description="Iris Flower Predictor"
+    )
     
-    # Save the model to the model registry, including all files in 'model_dir'
+    # Upload the model to the model registry, including all files in 'model_dir'
     iris_model.save(model_dir)
     
 if __name__ == "__main__":

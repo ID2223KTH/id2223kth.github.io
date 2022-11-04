@@ -36,7 +36,7 @@ def g():
     
     y_pred = model.predict(batch_data)
     
-    flower = y_pred[y_pred.size-1]
+    flower = y_pred[3]
     flower_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + flower + ".png"
     print("Flower predicted: " + flower)
     img = Image.open(requests.get(flower_url, stream=True).raw)            
