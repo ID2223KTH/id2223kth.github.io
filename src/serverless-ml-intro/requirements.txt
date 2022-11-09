@@ -3,3 +3,5 @@ joblib
 scikit-learn
 seaborn
 dataframe-image
+modal-client
+gradio
