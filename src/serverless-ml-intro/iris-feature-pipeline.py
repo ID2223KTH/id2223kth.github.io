@@ -1,7 +1,7 @@
 import os
 import modal
     
-LOCAL=False
+LOCAL=True
 
 if LOCAL == False:
    stub = modal.Stub()
