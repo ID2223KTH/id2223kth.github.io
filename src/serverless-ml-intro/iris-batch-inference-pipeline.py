@@ -5,7 +5,7 @@ LOCAL=True
 
 if LOCAL == False:
    stub = modal.Stub()
-   hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks","joblib","seaborn","sklearn","dataframe-image"])
+   hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks==3.0.4","joblib","seaborn","sklearn","dataframe-image"])
    @stub.function(image=hopsworks_image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("HOPSWORKS_API_KEY"))
    def f():
        g()
@@ -35,19 +35,20 @@ def g():
     batch_data = feature_view.get_batch_data()
     
     y_pred = model.predict(batch_data)
-    # print(y_pred)
-    flower = y_pred[y_pred.size-1]
+    #print(y_pred)
+    offset = 1
+    flower = y_pred[y_pred.size-offset]
     flower_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + flower + ".png"
     print("Flower predicted: " + flower)
     img = Image.open(requests.get(flower_url, stream=True).raw)            
     img.save("./latest_iris.png")
     dataset_api = project.get_dataset_api()    
     dataset_api.upload("./latest_iris.png", "Resources/images", overwrite=True)
-    
+   
     iris_fg = fs.get_feature_group(name="iris_modal", version=1)
-    df = iris_fg.read()
-    # print(df["variety"])
-    label = df.iloc[-1]["variety"]
+    df = iris_fg.read() 
+    #print(df)
+    label = df.iloc[-offset]["variety"]
     label_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + label + ".png"
     print("Flower actual: " + label)
     img = Image.open(requests.get(label_url, stream=True).raw)            
@@ -75,7 +76,7 @@ def g():
     history_df = pd.concat([history_df, monitor_df])
 
 
-    df_recent = history_df.tail(5)
+    df_recent = history_df.tail(4)
     dfi.export(df_recent, './df_recent.png', table_conversion = 'matplotlib')
     dataset_api.upload("./df_recent.png", "Resources/images", overwrite=True)
     
