@@ -9,10 +9,10 @@ permalink: /deadlines/
 <br>
 
 # Lab Assignments
-* **Lab1** - deadline: Nov 23
-* **Lab2** - deadline: Dec 13
+* **Lab1** - deadline: Nov 24
+* **Lab2** - deadline: Dec 12
 <br>
 
 # The Final Project
-* **Proposal** - deadline: Dec. 1
+* **Proposal** - deadline: Dec. 9
 * **Project** - deadline: Jan. 9
