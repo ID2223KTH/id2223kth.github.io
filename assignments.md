@@ -24,8 +24,8 @@ The lab assignments span over different topics of the course. For each lab, a zi
 
 # Project
 You should define your own project by writing at most one page description of the project. The proposed project should be approved by the examiner. The project proposal should cover the following headings:
-* **Problem description:** what is the problem that you will be investigating?
-* **Tools:** what tools you are going to use? In the course we mainly used Spark and Tensorflow, but you are free to explore new tools and technologies.
+* **Problem description:** what are the data sources and the prediction problem that you will be building a ML System for?
+* **Tools:** what tools you are going to use? In the course we mainly used Decision Trees and PyTorch/Tensorflow, but you are free to explore new tools and technologies.
 * **Data:** what data will you use and how are you going to collect it? 
 * **Methodology and algorithm:** what method(s) or algorithm(s) are you proposing? 
 

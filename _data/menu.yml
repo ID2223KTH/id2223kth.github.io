@@ -10,6 +10,8 @@
   href: "/deadlines/"
 - title: "Old"
   subcategories:
+    - subtitle: "2022"
+      subhref: "/schedule_2022/"
     - subtitle: "2021"
       subhref: "/schedule_2021/"
     - subtitle: "2020"
