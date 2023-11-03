@@ -1,11 +1,11 @@
 import os
 import modal
 
-LOCAL=False
+LOCAL=True
 
 if LOCAL == False:
    stub = modal.Stub("iris_daily")
-   image = modal.Image.debian_slim().pip_install(["hopsworks==3.0.4"]) 
+   image = modal.Image.debian_slim().pip_install(["hopsworks"]) 
 
    @stub.function(image=image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("jim-hopsworks-ai"))
    def f():
@@ -65,7 +65,7 @@ def g():
     iris_df = get_random_iris_flower()
 
     iris_fg = fs.get_feature_group(name="iris_modal",version=1)
-    iris_fg.insert(iris_df, write_options={"wait_for_job" : False})
+    iris_fg.insert(iris_df)
 
 if __name__ == "__main__":
     if LOCAL == True :

@@ -14,7 +14,7 @@ iris_fg = fs.get_or_create_feature_group(
     version=1,
     primary_key=["sepal_length","sepal_width","petal_length","petal_width"], 
     description="Iris flower dataset")
-iris_fg.insert(iris_df, write_options={"wait_for_job" : False})
+iris_fg.insert(iris_df)
 
 #expectation_suite = ge.core.ExpectationSuite(expectation_suite_name="iris_dimensions")    
 #value_between(expectation_suite, "sepal_length", 4.5, 8.0)

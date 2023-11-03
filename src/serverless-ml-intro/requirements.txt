@@ -1,7 +1,9 @@
+#If you have windows, install twofish
+#twofish
 hopsworks
 joblib
-scikit-learn
+scikit-learn==1.1.1
 seaborn
 dataframe-image
-modal-client
-gradio
+modal
+gradio==3.18
