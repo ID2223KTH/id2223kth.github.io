@@ -64,7 +64,7 @@ def g():
 
     iris_df = get_random_iris_flower()
 
-    iris_fg = fs.get_feature_group(name="iris_modal",version=1)
+    iris_fg = fs.get_feature_group(name="iris",version=1)
     iris_fg.insert(iris_df)
 
 if __name__ == "__main__":

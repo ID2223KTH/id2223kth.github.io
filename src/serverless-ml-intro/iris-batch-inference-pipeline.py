@@ -5,7 +5,7 @@ LOCAL=True
 
 if LOCAL == False:
    stub = modal.Stub()
-   hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks==3.0.4","joblib","seaborn","sklearn","dataframe-image"])
+   hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks","joblib","seaborn","sklearn==1.1.1","dataframe-image"])
    @stub.function(image=hopsworks_image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("HOPSWORKS_API_KEY"))
    def f():
        g()
@@ -27,11 +27,11 @@ def g():
     fs = project.get_feature_store()
     
     mr = project.get_model_registry()
-    model = mr.get_model("iris_modal", version=1)
+    model = mr.get_model("iris_model", version=1)
     model_dir = model.download()
     model = joblib.load(model_dir + "/iris_model.pkl")
     
-    feature_view = fs.get_feature_view(name="iris_modal", version=1)
+    feature_view = fs.get_feature_view(name="iris", version=1)
     batch_data = feature_view.get_batch_data()
     
     y_pred = model.predict(batch_data)
@@ -45,7 +45,7 @@ def g():
     dataset_api = project.get_dataset_api()    
     dataset_api.upload("./latest_iris.png", "Resources/images", overwrite=True)
    
-    iris_fg = fs.get_feature_group(name="iris_modal", version=1)
+    iris_fg = fs.get_feature_group(name="iris", version=1)
     df = iris_fg.read() 
     #print(df)
     label = df.iloc[-offset]["variety"]
