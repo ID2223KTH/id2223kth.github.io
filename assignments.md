@@ -14,7 +14,7 @@ The exam will be based on the material from the lectures and the referenced mate
 # Lab Assignments
 The lab assignments span over different topics of the course. For each lab, a zip file is given that includes instructions for doing the assignment.
 
-* **Lab 1:** 
+* **Lab 1:** <a href="/assignments/lab1/id2223_kth_lab1_2023.pdf">Instructions</a> 
 
 * **Lab 2:** 
 
