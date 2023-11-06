@@ -5,7 +5,7 @@ permalink: /deadlines/
 ---
 
 # Examination
-* * - Jan 8th 2024, 08-12.00
+* * - Jan 8th 2024, 14-18.00
 <br>
 
 # Lab Assignments
