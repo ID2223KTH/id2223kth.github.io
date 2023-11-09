@@ -1,4 +1,4 @@
-name: fraud-feature-pipelines
+name: iris-feature-pipeline-daily
 
 on:
   workflow_dispatch:
