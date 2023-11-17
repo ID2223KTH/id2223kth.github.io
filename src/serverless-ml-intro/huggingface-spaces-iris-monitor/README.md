@@ -1,10 +1,10 @@
 ---
 title: Iris Monitoring
 emoji: 💻
-colorFrom: blue
-colorTo: pink
+colorFrom: indigo
+colorTo: yellow
 sdk: gradio
-sdk_version: 3.8.2
+sdk_version: 4.4.0
 app_file: app.py
 pinned: false
 license: apache-2.0

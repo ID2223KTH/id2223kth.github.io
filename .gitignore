@@ -11,3 +11,5 @@ assets/mathjax
 .DS_Store
 
 api-key.sh
+*.code-workspace
+.env

@@ -1,5 +1,3 @@
-#If you have windows, install twofish
-#twofish
 hopsworks
 joblib
 scikit-learn
@@ -7,4 +5,3 @@ seaborn
 dataframe-image
 modal
 gradio
-python-dotenv
