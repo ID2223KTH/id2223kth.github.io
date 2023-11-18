@@ -28,7 +28,7 @@ def g():
     fs = project.get_feature_store()
     
     mr = project.get_model_registry()
-    model = mr.get_model("iris_model", version=1)
+    model = mr.get_model("iris_model", version=5)
     model_dir = model.download()
     model = joblib.load(model_dir + "/iris_model.pkl")
     
@@ -36,7 +36,7 @@ def g():
     batch_data = feature_view.get_batch_data()
     
     y_pred = model.predict(batch_data)
-    #print(y_pred)
+    # print(y_pred)
     offset = 1
     flower = y_pred[y_pred.size-offset]
     flower_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + flower + ".png"
@@ -48,7 +48,7 @@ def g():
    
     iris_fg = fs.get_feature_group(name="iris", version=1)
     df = iris_fg.read() 
-    #print(df)
+    # print(df)
     label = df.iloc[-offset]["variety"]
     label_url = "https://raw.githubusercontent.com/featurestoreorg/serverless-ml-course/main/src/01-module/assets/" + label + ".png"
     print("Flower actual: " + label)
@@ -83,7 +83,6 @@ def g():
     
     predictions = history_df[['prediction']]
     labels = history_df[['label']]
-
     # Only create the confusion matrix when our iris_predictions feature group has examples of all 3 iris flowers
     print("Number of different flower predictions to date: " + str(predictions.value_counts().count()))
     if predictions.value_counts().count() == 3:
