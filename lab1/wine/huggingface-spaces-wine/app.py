@@ -5,7 +5,7 @@ import hopsworks as hw
 import joblib
 import pandas as pd
 
-project = hw.login()
+project = hw.login(project="jayeshv")
 fs = project.get_feature_store()
 
 mr = project.get_model_registry()
