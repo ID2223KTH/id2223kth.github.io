@@ -16,7 +16,7 @@ The lab assignments span over different topics of the course. For each lab, a zi
 
 * **Lab 1:** <a href="/assignments/lab1/id2223_kth_lab1_2023.pdf">Instructions</a> 
 
-* **Lab 2:** 
+* **Lab 2:** <a href="/assignments/lab1/id2223_kth_lab2_2023.pdf">Instructions</a> 
 
 <br>
 <hr>
