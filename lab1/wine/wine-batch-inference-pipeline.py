@@ -90,7 +90,8 @@ def g():
         fig = cm.get_figure()
         fig.savefig("./confusion_matrix.png")
         dataset_api.upload("./confusion_matrix.png", "Resources", overwrite=True)
-    
+    else:
+        print("You need 3 different flower predictions to create the confusion matrix.")
 
 
 if __name__ == "__main__":
