@@ -11,9 +11,6 @@ if LOCAL == False:
     def f():
         g()
 
-
-
-
 def generate_wine():
     """
     Returns a single wine as a single row in a DataFrame

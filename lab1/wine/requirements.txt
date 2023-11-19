@@ -1,5 +1,6 @@
 #If you have windows, install twofish
 #twofish
+xgboost
 hopsworks
 joblib
 scikit-learn
