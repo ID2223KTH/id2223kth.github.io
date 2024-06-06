@@ -6,4 +6,4 @@ scikit-learn==1.1.1
 seaborn
 dataframe-image
 modal
-gradio==4.11.0
+gradio==4.36.0
