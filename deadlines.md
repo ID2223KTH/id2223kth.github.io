@@ -5,7 +5,7 @@ permalink: /deadlines/
 ---
 
 # Examination
-* * - Jan 8th 2024, 14-18.00
+* * Jan 13th 2024, 14-18.00
 <br>
 
 # Lab Assignments
@@ -14,5 +14,5 @@ permalink: /deadlines/
 <br>
 
 # The Final Project
-* **Proposal** - deadline: Dec. 5
-* **Project** - deadline: Jan. 8
+* **Proposal** - deadline: Dec. 6 
+* **Project** - deadline: Jan. 10
