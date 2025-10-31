@@ -2,8 +2,6 @@
   href: "/"
 - title: "Old"
   subcategories:
-    - subtitle: "2024"
-      subhref: "/schedule_2024/"
     - subtitle: "2023"
       subhref: "/schedule_2023/"
     - subtitle: "2022"
